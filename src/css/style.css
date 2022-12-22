@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+  "content-1 content-1"
+  "content-2 content-3";
+
+  width: 100vh;
+  height: 70vh;
+}
+
+.content-1 {
+  padding: 40px;
+  background-color: white;
+  grid-area: content-1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.content-2 {
+  padding: 30px;
+  background-color: darkcyan;
+  grid-area: content-2;
+  border-bottom-left-radius: 10px;
+}
+
+.content-3 {
+  padding: 30px;
+  background-color: hsl(179, 62%, 43%);
+  grid-area: content-3;
+  border-bottom-right-radius: 10px;
+}
+
+.content-1 h1 {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: hsl(179, 62%, 43%);
+}
+
+.content-1 .yellow {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  color: yellowgreen;
+  margin-bottom: 20px;
+}
+
+.content-1 .info {
+  align-self: flex-start;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  color: lightgray;
+}
+
+.content-2 .title {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.content-2 .price {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  color: lightgray;
+  margin-bottom: 10px;
+}
+
+.content-2 .price span {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.content-2 .info {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.content-2 .button {
+  display: flex;
+  justify-content: center;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  background-color: yellowgreen;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.content-3 h2 {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.content-3 p {
+ font-family: "Karla", sans-serif;
+ font-weight: 400;
+ color: white;
+ font-size: 18px;
+}
